@@ -270,7 +270,7 @@ def ctc_loss(y_true, y_pred, input_len, label_len):
     """Compute CTC batch loss."""
     return tf.keras.backend.ctc_batch_cost(y_true, y_pred, input_len, label_len)
 
-
+@tf.function
 def train_step(model, optimizer, x, y, input_len, label_len):
     """Single training step with gradient computation."""
     with tf.GradientTape() as tape:
