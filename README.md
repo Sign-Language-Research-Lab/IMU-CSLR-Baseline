@@ -1,4 +1,4 @@
-# IMU-CSLR Baselines
+# IMU-CSLR
 
 Reproducible benchmark implementations for inertial sensor–based continous sign language recognition using IMU data (6 sensors × 6 features).
 
